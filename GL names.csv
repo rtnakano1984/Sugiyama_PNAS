@@ -1,0 +1,21 @@
+code,class,abbr,full
+G01,MS,3MSP,3-Methylsulfinyl-n-propyl glucosinolate
+G02,MS,4MSB,4-Methylsulfinyl-n-butyl glucosinolate
+G03,MS,5MSP,5-Methylsulfinyl-n-pentyl glucosinolate
+G04,MS,6MSH,6-Methylsulfinyl-n-hexyl glucosinolate
+G05,MS,7MSH,7-Methylsulfinyl-n-heptyl glucosinolate
+G06,MS,8MSO,8-Methylsulfinyl-n-octyl glucosinolate
+G07,MT,3MTP,3-Methylthio-n-propyl glucosinolate
+G08,MT,4MTB,4-Methylthio-n-butyl glucosinolate
+G09,MT,5MTP,5-Methylthio-n-pentyl glucosinolate
+G10,MT,6MTH,6-Methylthio-n-hexyl glucosinolate
+G11,MT,7MTH,7-Methylthio-n-heptyl glucosinolate
+G12,MT,8MTO,8-Methylthio-n-octyl glucosinolate
+G13,OR,3OHP,3-Hydroxy-n-propyl glucosinolate
+G14,OR,4OHB,4-Hydroxy-n-butyl glucosinolate
+G15,OR,3OBzP,3-Benzoyloxy-n-propyl glucosinolate
+G16,OR,4OBzB,4-Benzoyloxy-n-butyl glucosinolate
+G17,Benzenic,PhE,2-Phenylethyl glucosinolate
+G18,Indole,I3G,Indol-3-ylmethyl glucosinolate
+G19,Indole,1MI3G,1-Methoxyindol-3-ylmethyl glucosinolate
+G20,Indole,4MI3G,4-Methoxyindol-3-ylmethyl glucosinolate

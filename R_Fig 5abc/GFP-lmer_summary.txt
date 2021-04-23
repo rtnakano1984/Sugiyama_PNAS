@@ -1,0 +1,38 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: sqrt(value) ~ cpd - 1 + (1 | batch)
+   Data: dat
+
+REML criterion at convergence: -70.1
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.35283 -0.31463  0.03816  0.46639  1.88584 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ batch    (Intercept) 0.0002578 0.01606 
+ Residual             0.0005763 0.02401 
+Number of obs: 27, groups:  batch, 3
+
+Fixed effects:
+         Estimate Std. Error t value
+cpd1MI3G  0.01933    0.01667   1.159
+cpdBn     0.05970    0.01667   3.580
+cpdGEC    0.02916    0.01667   1.749
+cpdGIB    0.06662    0.01667   3.995
+cpdGRA    0.04980    0.01667   2.986
+cpdGRE    0.04891    0.01667   2.933
+cpdI3G    0.01185    0.01667   0.711
+cpdPhE    0.04255    0.01667   2.552
+cpdSIN    0.06365    0.01667   3.817
+
+Correlation of Fixed Effects:
+       c1MI3G cpdBn cpdGEC cpdGIB cpdGRA cpdGRE cpdI3G cpdPhE
+cpdBn  0.309                                                 
+cpdGEC 0.309  0.309                                          
+cpdGIB 0.309  0.309 0.309                                    
+cpdGRA 0.309  0.309 0.309  0.309                             
+cpdGRE 0.309  0.309 0.309  0.309  0.309                      
+cpdI3G 0.309  0.309 0.309  0.309  0.309  0.309               
+cpdPhE 0.309  0.309 0.309  0.309  0.309  0.309  0.309        
+cpdSIN 0.309  0.309 0.309  0.309  0.309  0.309  0.309  0.309 

@@ -1,0 +1,15 @@
+	p.letters$Letters[sort]
+S1500:Col	d
+S1500:bglu2830	de
+S1500:tgg12	c
+S1500:tgg45	de
+S1500:pen2	de
+S1500:pyk10	e
+S1500:bglu18	de
+S15:Col	a
+S15:bglu2830	b
+S15:tgg12	a
+S15:tgg45	a
+S15:pen2	a
+S15:pyk10	a
+S15:bglu18	a

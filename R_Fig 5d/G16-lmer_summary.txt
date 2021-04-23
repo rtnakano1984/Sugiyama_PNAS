@@ -1,0 +1,56 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: sqrt(value) ~ time:genotype - 1 + (1 | batch)
+   Data: dat
+
+REML criterion at convergence: 43.3
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.05681 -0.53035 -0.08504  0.55690  2.18530 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ batch    (Intercept) 0.05539  0.2354  
+ Residual             0.11063  0.3326  
+Number of obs: 48, groups:  batch, 3
+
+Fixed effects:
+                                  Estimate Std. Error t value
+timeS1500_0d:genotypewt             3.7666     0.1921  19.608
+timeS1500_5d:genotypewt             1.6402     0.2352   6.972
+timeS0_5d:genotypewt                0.6114     0.2352   2.599
+timeS1500_0d:genotypebglu28         3.6878     0.1921  19.198
+timeS1500_5d:genotypebglu28         1.3872     0.2352   5.897
+timeS0_5d:genotypebglu28            0.5561     0.2352   2.364
+timeS1500_0d:genotypebglu30         3.5302     0.1921  18.377
+timeS1500_5d:genotypebglu30         1.2456     0.2352   5.295
+timeS0_5d:genotypebglu30            0.6275     0.2352   2.668
+timeS1500_0d:genotypebglu28bglu30   2.8185     0.1921  14.672
+timeS1500_5d:genotypebglu28bglu30   1.1695     0.2352   4.971
+timeS0_5d:genotypebglu28bglu30      0.7562     0.2352   3.214
+
+Correlation of Fixed Effects:
+             tmS1500_0: tmS1500_5: tmS0_5: tmS1500_0:28 tmS1500_5:28 tmS0_5:28
+tmS1500_5d:  0.409                                                            
+tmS0_5d:gnt  0.409      0.334                                                 
+tmS1500_0:28 0.500      0.409      0.409                                      
+tmS1500_5:28 0.409      0.334      0.334   0.409                              
+tmS0_5d:g28  0.409      0.334      0.334   0.409        0.334                 
+tS1500_0:30  0.500      0.409      0.409   0.500        0.409        0.409    
+tS1500_5:30  0.409      0.334      0.334   0.409        0.334        0.334    
+tmS0_5d:g30  0.409      0.334      0.334   0.409        0.334        0.334    
+tS1500_0:283 0.500      0.409      0.409   0.500        0.409        0.409    
+tS1500_5:283 0.409      0.334      0.334   0.409        0.334        0.334    
+tmS0_5:2830  0.409      0.334      0.334   0.409        0.334        0.334    
+             tS1500_0:3 tS1500_5:3 tS0_5:3 tS1500_0:283 tS1500_5:283
+tmS1500_5d:                                                         
+tmS0_5d:gnt                                                         
+tmS1500_0:28                                                        
+tmS1500_5:28                                                        
+tmS0_5d:g28                                                         
+tS1500_0:30                                                         
+tS1500_5:30  0.409                                                  
+tmS0_5d:g30  0.409      0.334                                       
+tS1500_0:283 0.500      0.409      0.409                            
+tS1500_5:283 0.409      0.334      0.334   0.409                    
+tmS0_5:2830  0.409      0.334      0.334   0.409        0.334       

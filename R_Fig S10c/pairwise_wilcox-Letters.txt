@@ -1,0 +1,8 @@
+S1500:wt	e
+S1500:bglu28bglu30	f
+S150:wt	c
+S150:bglu28bglu30	d
+S15:wt	a
+S15:bglu28bglu30	c
+S0:wt	b
+S0:bglu28bglu30	c

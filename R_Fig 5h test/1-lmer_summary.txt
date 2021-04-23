@@ -1,0 +1,34 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: sqrt(value) ~ sulfur:genotype - 1 + sample + (1 | pot)
+   Data: dat
+
+REML criterion at convergence: -58
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.8886 -0.5104 -0.1486  0.4400  2.2263 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ pot      (Intercept) 0.003055 0.05528 
+ Residual             0.017032 0.13051 
+Number of obs: 72, groups:  pot, 2
+
+Fixed effects:
+                                  Estimate Std. Error t value
+sample                           -0.004507   0.009006  -0.500
+sulfurS1500:genotypewt            2.392324   0.062774  38.110
+sulfurS30:genotypewt              1.554523   0.062774  24.764
+sulfurS3:genotypewt               0.146284   0.062774   2.330
+sulfurS1500:genotypebglu28bglu30  2.292513   0.062774  36.520
+sulfurS30:genotypebglu28bglu30    1.579162   0.062774  25.156
+sulfurS3:genotypebglu28bglu30     0.393480   0.062774   6.268
+
+Correlation of Fixed Effects:
+            sample slS1500: slS30: slfS3: sS1500:2 sS30:2
+slfrS1500:g -0.502                                       
+slfrS30:gnt -0.502  0.640                                
+slfrS3:gnty -0.502  0.640    0.640                       
+sS1500:2830 -0.502  0.640    0.640  0.640                
+slfS30:2830 -0.502  0.640    0.640  0.640  0.640         
+slfrS3:2830 -0.502  0.640    0.640  0.640  0.640    0.640

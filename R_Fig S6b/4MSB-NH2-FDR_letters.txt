@@ -1,0 +1,13 @@
+	p.letters$Letters[sort]
+00h:wt	a
+00h:wt_BSO	a
+00h:pad2	a
+09h:wt	b
+09h:wt_BSO	a
+09h:pad2	a
+24h:wt	e
+24h:wt_BSO	bc
+24h:pad2	bcd
+48h:wt	e
+48h:wt_BSO	de
+48h:pad2	cde

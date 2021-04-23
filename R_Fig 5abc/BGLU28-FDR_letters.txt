@@ -1,0 +1,10 @@
+	p.letters$Letters[sort]
+SIN	b
+GIB	b
+GRA	a
+GRE	ab
+GEC	c
+Bn	c
+PhE	c
+I3G	a
+1MI3G	b

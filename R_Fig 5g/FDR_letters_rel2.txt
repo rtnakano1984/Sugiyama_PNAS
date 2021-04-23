@@ -1,0 +1,4 @@
+	p.letters$Letters[sulfur]
+S1500	a
+S30	a
+S3	a
