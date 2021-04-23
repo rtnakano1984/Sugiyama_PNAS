@@ -1,0 +1,7 @@
+	p.letters$Letters[sort]
+S1500:wt	b
+S1500:bglu28bglu30	b
+S30:wt	b
+S30:bglu28bglu30	b
+S3:wt	ab
+S3:bglu28bglu30	a

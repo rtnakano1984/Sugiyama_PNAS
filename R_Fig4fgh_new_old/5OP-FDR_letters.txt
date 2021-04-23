@@ -1,0 +1,5 @@
+	p.letters$Letters[sort]
+wt:S1500	c
+oxp1:S1500	b
+wt:S15	a
+oxp1:S15	b

@@ -1,0 +1,136 @@
+# Ryosuke Sugiyama et al., PNAS
+# Fig S7a
+# By Ryohei Thomas Nakano, PhD; nakano@mpipz.mpg.de
+
+rm(list=ls())
+
+library(lme4)
+library(dplyr)
+library(stringr)
+library(multcompView)
+
+data_dir <- "/netscratch/dep_psl/grp_psl/ThomasN/ryosuke_temp/R_Fig5g/"
+# data_dir <- "~/Desktop/ryosuke_temp/R_Fig4fgh_new/"
+
+dat <- read.table(paste(data_dir, "R_Fig5g.csv", sep=""), sep=",", header=T, stringsAsFactors=F)
+dat$batch <- as.factor(dat$batch)
+
+genotype <- c("wt", "bglu28 bglu30")
+sulfur <- c("S200", "S100", "S0", "4MTB", "4MSB", "PhE")
+GL <- c("4MSB", "4MTB", "PhE")
+
+
+dat$genotype <- factor(dat$genotype, genotype)
+dat$sulfur   <- factor(dat$sulfur, sulfur)
+
+colnames(dat)[5] <- "value"
+
+idx <- (dat$GL == "4MTB" & dat$sulfur %in% c("S200", "S100", "4MTB", "4MSB")) | (dat$GL == "4MSB" & dat$sulfur %in% c("S200", "S100", "4MTB", "4MSB")) | (dat$GL == "PhE" & dat$sulfur %in% c("S200", "S100", "PhE"))
+dat <- dat[idx,]
+
+# pairwise_test <- function(dat_lmer){
+
+# 	estim <- dat_lmer$coefficients[,1]
+# 	df <- length(dat_lmer$residuals) - length(estim) -  (sum(as.vector(dat_lmer$ngrps)) - 1 )
+# 	vcov <- as.matrix(dat_lmer$vcov)
+
+# 	idx <- order(estim)
+# 	estim <- estim[idx]
+# 	vcov <- vcov[idx,idx]
+
+
+# 	group <- names(estim)
+
+# 	group_comp <- c()    						
+# 	for (i in 1:(length(group)-1)){							
+# 	  for (j in (i+1):length(group)){
+# 	    group_comp <- c(group_comp, paste(group[i], group[j], sep="-"))
+# 	  }
+# 	}
+
+# 	id.mat <- matrix(0, ncol=1, nrow = length(group) )
+# 	p.val <- c()
+# 	for ( i in 1:(length(estim)-1)) {
+# 	  for (j in (i+1):length(estim)){
+# 	    id.mat.x <- id.mat
+# 	    id.mat.x[ i, 1 ] <- 1
+# 	    id.mat.x[ j, 1 ] <- -1
+# 	    stder <- sqrt( t(id.mat.x) %*% vcov %*% id.mat.x )
+# 	    t.val <- abs( estim[i]-estim[j]) / stder
+# 	    p.val <- c( p.val, 2 * pt( t.val, df, lower.tail=f ) )
+# 	  }
+# 	}
+
+# 	names(p.val) <- group_comp
+
+# 	adj_p.val <- p.adjust(p.val, "fdr")
+# 	p.letters <- multcompletters(adj_p.val)
+
+# 	return(p.letters)
+# }
+
+
+# total, Cys
+for(x in unique(dat$GL)){
+
+	# total
+	idx <- dat$GL == x
+	temp <- dat[idx,]
+
+	pdf(paste(data_dir, x, "-data_nomral.pdf", sep=""))
+		hist(temp$value, breaks=20)
+		qqnorm(temp$value)
+		qqline(temp$value, col='red')
+
+		hist(sqrt(temp$value), breaks=20)
+		qqnorm(sqrt(temp$value))
+		qqline(sqrt(temp$value), col='red')
+
+		hist(log10(temp$value), breaks=20)
+		qqnorm(log10(temp$value))
+		qqline(log10(temp$value), col='red')
+	dev.off()
+
+	if(x == "4MTB") {
+		fit <- lm(sqrt(value) ~ 0 + genotype:sulfur + batch, temp)
+	} else {
+		fit <- lm(log10(value) ~ 0 + genotype:sulfur + batch, temp)
+	}
+	anova <- anova(aov(fit))
+	# lmer_fit <- lmer(sqrt(value) ~ genotype:sulfur - 1 + (1|batch), temp)
+	# dat_lmer <- summary(lmer_fit)
+
+	sink(paste(data_dir, x, "-lmer_summary.txt", sep=""))
+		print(anova)
+	sink()
+
+	pdf(paste(data_dir, x, "-diagnosis.pdf", sep=""))
+		plot(fitted(fit), resid(fit))
+		abline(0, 0, col="red")
+
+		qqnorm(summary(fit)$resid)
+		qqline(summary(fit)$resid, col="red")
+	dev.off()
+
+	tukey <- TukeyHSD(aov(fit))
+	idx <- order(-tukey$'genotype:sulfur'[, 'diff'])
+	p.letters <- multcompLetters(tukey$'genotype:sulfur'[idx, 'p adj'])
+
+	sort <- expand.grid(unique(temp$genotype),unique(temp$sulfur)) %>% apply(1, paste, collapse=":")
+	write.table(as.data.frame(p.letters$Letters[sort]), file=paste(data_dir, x, "-FDR_letters.txt", sep=""), sep="\t", row.names=T,col.names=NA, quote=F)
+
+	p <- ggplot(temp, aes(x=sulfur, y=value, colour=genotype)) +
+		geom_point(position=position_jitterdodge(jitter.width=.2)) +
+		geom_boxplot(fill=NA, outlier.shape=NA) +
+		scale_y_log10() +
+		theme_bw() +
+		labs(title=x)
+	ggsave(p, file=paste(data_dir, x, "-boxplot.pdf", sep=""), width=6, height=4, bg="transparent")
+
+	# p.letters <- pairwise_test(dat_lmer)
+	# sort <- expand.grid(paste("genotype", genotype, sep=""), paste("sulfur", sulfur, sep="")) %>% apply(1, paste, collapse=":")
+	# write.table(as.data.frame(p.letters$Letters[sort]), file=paste(data_dir, x, "-FDR_letters.txt", sep=""), sep="\t", row.names=T,col.names=NA, quote=F)
+
+}
+
+

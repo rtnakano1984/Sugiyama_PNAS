@@ -1,0 +1,5 @@
+	p.letters$Letters[sort]
+genotypewt:sulfurS1500	bc
+genotypeoxp1:sulfurS1500	a
+genotypewt:sulfurS15	c
+genotypeoxp1:sulfurS15	b

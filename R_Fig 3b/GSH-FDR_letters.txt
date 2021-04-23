@@ -1,0 +1,13 @@
+	p.letters
+water:03h	bc
+water:09h	bc
+water:24h	c
+water:48h	b
+4MSB:03h	bc
+4MSB:09h	a
+4MSB:24h	bc
+4MSB:48h	c
+4MSB_d5:03h	bc
+4MSB_d5:09h	a
+4MSB_d5:24h	bc
+4MSB_d5:48h	c

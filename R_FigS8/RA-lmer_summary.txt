@@ -1,0 +1,9 @@
+Analysis of Variance Table
+
+Response: sqrt(value)
+          Df  Sum Sq Mean Sq  F value    Pr(>F)    
+sulfur     6 13.2900 2.21501 194.4342 < 2.2e-16 ***
+batch      5  0.2512 0.05025   4.4107  0.005131 ** 
+Residuals 25  0.2848 0.01139                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,16 @@
+group_comp	p.val	adj_p
+sulfurS3:genotypewt-sulfurS30:genotypewt	0.673526748550333	0.721635802018214
+sulfurS3:genotypewt-sulfurS3:genotypebglu28bglu30	0.510165860443369	0.637707325554212
+sulfurS3:genotypewt-sulfurS30:genotypebglu28bglu30	0.0905840425646389	0.150973404274398
+sulfurS3:genotypewt-sulfurS1500:genotypewt	3.25153642227555e-17	1.62576821113777e-16
+sulfurS3:genotypewt-sulfurS1500:genotypebglu28bglu30	4.43288998598147e-18	6.6493349789722e-17
+sulfurS30:genotypewt-sulfurS3:genotypebglu28bglu30	0.811846845094405	0.811846845094405
+sulfurS30:genotypewt-sulfurS30:genotypebglu28bglu30	0.199971733280827	0.29995759992124
+sulfurS30:genotypewt-sulfurS1500:genotypewt	1.62582824855208e-16	4.87748474565623e-16
+sulfurS30:genotypewt-sulfurS1500:genotypebglu28bglu30	2.15779174412953e-17	1.61834380809715e-16
+sulfurS3:genotypebglu28bglu30-sulfurS30:genotypebglu28bglu30	0.294950383471065	0.402205068369634
+sulfurS3:genotypebglu28bglu30-sulfurS1500:genotypewt	4.0715236994051e-16	1.01788092485127e-15
+sulfurS3:genotypebglu28bglu30-sulfurS1500:genotypebglu28bglu30	5.32484038721572e-17	1.9968151452059e-16
+sulfurS30:genotypebglu28bglu30-sulfurS1500:genotypewt	2.52535063334083e-14	4.73503243751406e-14
+sulfurS30:genotypebglu28bglu30-sulfurS1500:genotypebglu28bglu30	3.11292410104597e-15	6.67055164509851e-15
+sulfurS1500:genotypewt-sulfurS1500:genotypebglu28bglu30	0.596578805380193	0.688360160054068

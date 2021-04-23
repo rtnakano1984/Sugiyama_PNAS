@@ -1,0 +1,15 @@
+	x
+S1500:Col	a
+S1500:bglu2830	a
+S1500:tgg12	a
+S1500:tgg45	a
+S1500:pen2	a
+S1500:pyk10	a
+S1500:bglu18	a
+S15:Col	cd
+S15:bglu2830	b
+S15:tgg12	de
+S15:tgg45	e
+S15:pen2	e
+S15:pyk10	c
+S15:bglu18	cd

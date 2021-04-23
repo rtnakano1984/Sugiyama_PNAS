@@ -1,0 +1,59 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: log10(value) ~ treatment:time - 1 + (1 | batch)
+   Data: temp
+
+REML criterion at convergence: -29.9
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.68420 -0.39176 -0.06454  0.24668  3.14822 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ batch    (Intercept) 0.000000 0.00000 
+ Residual             0.009712 0.09855 
+Number of obs: 36, groups:  batch, 3
+
+Fixed effects:
+                         Estimate Std. Error t value
+treatmentwater:time03h   -1.89582    0.05690 -33.319
+treatment4MSB:time03h    -1.87704    0.05690 -32.989
+treatment4MSB_d5:time03h -0.28333    0.05690  -4.979
+treatmentwater:time09h   -1.90316    0.05690 -33.448
+treatment4MSB:time09h    -1.87067    0.05690 -32.877
+treatment4MSB_d5:time09h  0.32132    0.05690   5.647
+treatmentwater:time24h   -1.90858    0.05690 -33.543
+treatment4MSB:time24h    -1.84130    0.05690 -32.361
+treatment4MSB_d5:time24h  0.58161    0.05690  10.222
+treatmentwater:time48h   -2.00418    0.05690 -35.224
+treatment4MSB:time48h    -1.99835    0.05690 -35.121
+treatment4MSB_d5:time48h -0.04477    0.05690  -0.787
+
+Correlation of Fixed Effects:
+            trt:03 t4MSB:03 t4MSB_5:03 trt:09 t4MSB:09 t4MSB_5:09 trt:24
+trtm4MSB:03 0.000                                                       
+tr4MSB_5:03 0.000  0.000                                                
+trtmntwt:09 0.000  0.000    0.000                                       
+trtm4MSB:09 0.000  0.000    0.000      0.000                            
+tr4MSB_5:09 0.000  0.000    0.000      0.000  0.000                     
+trtmntwt:24 0.000  0.000    0.000      0.000  0.000    0.000            
+trtm4MSB:24 0.000  0.000    0.000      0.000  0.000    0.000      0.000 
+tr4MSB_5:24 0.000  0.000    0.000      0.000  0.000    0.000      0.000 
+trtmntwt:48 0.000  0.000    0.000      0.000  0.000    0.000      0.000 
+trtm4MSB:48 0.000  0.000    0.000      0.000  0.000    0.000      0.000 
+tr4MSB_5:48 0.000  0.000    0.000      0.000  0.000    0.000      0.000 
+            t4MSB:2 t4MSB_5:2 trt:48 t4MSB:4
+trtm4MSB:03                                 
+tr4MSB_5:03                                 
+trtmntwt:09                                 
+trtm4MSB:09                                 
+tr4MSB_5:09                                 
+trtmntwt:24                                 
+trtm4MSB:24                                 
+tr4MSB_5:24 0.000                           
+trtmntwt:48 0.000   0.000                   
+trtm4MSB:48 0.000   0.000     0.000         
+tr4MSB_5:48 0.000   0.000     0.000  0.000  
+convergence code: 0
+boundary (singular) fit: see ?isSingular
+

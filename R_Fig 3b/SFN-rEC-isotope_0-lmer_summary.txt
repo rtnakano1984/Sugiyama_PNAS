@@ -1,0 +1,56 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: value ~ treatment:time - 1 + (1 | batch)
+   Data: temp
+
+REML criterion at convergence: -26.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.3057 -0.0311  0.0127  0.0284  3.9111 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ batch    (Intercept) 0.0001432 0.01197 
+ Residual             0.0111920 0.10579 
+Number of obs: 36, groups:  batch, 3
+
+Fixed effects:
+                         Estimate Std. Error t value
+treatmentwater:time03h   0.012770   0.061469   0.208
+treatment4MSB:time03h    0.029338   0.061469   0.477
+treatment4MSB_d5:time03h 0.012734   0.061469   0.207
+treatmentwater:time09h   0.011876   0.061469   0.193
+treatment4MSB:time09h    0.273070   0.061469   4.442
+treatment4MSB_d5:time09h 0.012812   0.061469   0.208
+treatmentwater:time24h   0.012495   0.061469   0.203
+treatment4MSB:time24h    0.954382   0.061469  15.526
+treatment4MSB_d5:time24h 0.011854   0.061469   0.193
+treatmentwater:time48h   0.009911   0.061469   0.161
+treatment4MSB:time48h    1.108043   0.061469  18.026
+treatment4MSB_d5:time48h 0.016015   0.061469   0.261
+
+Correlation of Fixed Effects:
+            trt:03 t4MSB:03 t4MSB_5:03 trt:09 t4MSB:09 t4MSB_5:09 trt:24
+trtm4MSB:03 0.013                                                       
+tr4MSB_5:03 0.013  0.013                                                
+trtmntwt:09 0.013  0.013    0.013                                       
+trtm4MSB:09 0.013  0.013    0.013      0.013                            
+tr4MSB_5:09 0.013  0.013    0.013      0.013  0.013                     
+trtmntwt:24 0.013  0.013    0.013      0.013  0.013    0.013            
+trtm4MSB:24 0.013  0.013    0.013      0.013  0.013    0.013      0.013 
+tr4MSB_5:24 0.013  0.013    0.013      0.013  0.013    0.013      0.013 
+trtmntwt:48 0.013  0.013    0.013      0.013  0.013    0.013      0.013 
+trtm4MSB:48 0.013  0.013    0.013      0.013  0.013    0.013      0.013 
+tr4MSB_5:48 0.013  0.013    0.013      0.013  0.013    0.013      0.013 
+            t4MSB:2 t4MSB_5:2 trt:48 t4MSB:4
+trtm4MSB:03                                 
+tr4MSB_5:03                                 
+trtmntwt:09                                 
+trtm4MSB:09                                 
+tr4MSB_5:09                                 
+trtmntwt:24                                 
+trtm4MSB:24                                 
+tr4MSB_5:24 0.013                           
+trtmntwt:48 0.013   0.013                   
+trtm4MSB:48 0.013   0.013     0.013         
+tr4MSB_5:48 0.013   0.013     0.013  0.013  

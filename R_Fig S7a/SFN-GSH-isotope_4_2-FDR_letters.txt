@@ -1,0 +1,5 @@
+	p.letters$Letters[paste("sulfur", sulfur, sep = "")]
+sulfurS1500	a
+sulfurS150	a
+sulfur4MSB	b
+sulfur4MSB_34S	c
