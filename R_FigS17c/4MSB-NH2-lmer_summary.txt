@@ -1,0 +1,36 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: sqrt(value) ~ genotype:time - 1 + (1 | batch)
+   Data: dat
+
+REML criterion at convergence: -288.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.2532 -0.1357  0.0133  0.1284  3.2108 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ batch    (Intercept) 1.078e-05 0.003284
+ Residual             3.047e-04 0.017455
+Number of obs: 78, groups:  batch, 3
+
+Fixed effects:
+                              Estimate Std. Error t value
+genotypewtintact:time0h       0.009085   0.007374   1.232
+genotypewthomogenate:time0h   0.009085   0.007374   1.232
+genotypemedium:time0h         0.009085   0.007374   1.232
+genotypewtintact:time6min     0.096771   0.010255   9.437
+genotypewthomogenate:time6min 0.285839   0.010255  27.874
+genotypemedium:time6min       0.009342   0.007374   1.267
+genotypewtintact:time3h       0.266918   0.010255  26.029
+genotypewthomogenate:time3h   0.295933   0.010255  28.858
+genotypemedium:time3h         0.009156   0.007374   1.242
+genotypewtintact:time9h       0.534773   0.010255  52.149
+genotypewthomogenate:time9h   0.294564   0.010255  28.725
+genotypemedium:time9h         0.009365   0.007374   1.270
+genotypewtintact:time24h      0.843830   0.010255  82.287
+genotypewthomogenate:time24h  0.314492   0.010255  30.668
+genotypemedium:time24h        0.009278   0.007374   1.258
+genotypewtintact:time48h      0.929488   0.010255  90.640
+genotypewthomogenate:time48h  0.349295   0.010255  34.062
+genotypemedium:time48h        0.009175   0.007374   1.244

@@ -1,0 +1,39 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: log10(value) ~ time:genotype - 1 + (1 | batch)
+   Data: dat
+
+REML criterion at convergence: -31
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-1.41246 -0.55404 -0.04418  0.52733  1.74121 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ batch    (Intercept) 0.000000 0.00000 
+ Residual             0.009007 0.09491 
+Number of obs: 30, groups:  batch, 3
+
+Fixed effects:
+                     Estimate Std. Error t value
+time00h:genotypeoxp1 -0.97034    0.03875 -25.044
+time09h:genotypeoxp1 -0.87779    0.05479 -16.020
+time24h:genotypeoxp1 -0.55270    0.05479 -10.087
+time48h:genotypeoxp1 -0.54525    0.05479  -9.951
+time00h:genotypewt   -1.77565    0.03875 -45.829
+time09h:genotypewt   -1.37255    0.05479 -25.049
+time24h:genotypewt   -1.03703    0.05479 -18.926
+time48h:genotypewt   -1.13471    0.05479 -20.709
+
+Correlation of Fixed Effects:
+            tm00:1 tm09:1 tm24:1 tm48:1 tm00h: tm09h: tm24h:
+tm09h:gnty1 0.000                                           
+tm24h:gnty1 0.000  0.000                                    
+tm48h:gnty1 0.000  0.000  0.000                             
+tm00h:gntyp 0.000  0.000  0.000  0.000                      
+tm09h:gntyp 0.000  0.000  0.000  0.000  0.000               
+tm24h:gntyp 0.000  0.000  0.000  0.000  0.000  0.000        
+tm48h:gntyp 0.000  0.000  0.000  0.000  0.000  0.000  0.000 
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see ?isSingular
+

@@ -1,0 +1,10 @@
+	p.letters$Letters[sort]
+Allyl	a
+3MSP	a
+4MSB	a
+4MSB(en)	a
+4MTB	a
+Bn	a
+PhE	a
+I3G	a
+1MI3G	a

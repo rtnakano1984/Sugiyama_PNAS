@@ -1,0 +1,59 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: sqrt(value) ~ time:genotype - 1 + (1 | batch)
+   Data: dat
+
+REML criterion at convergence: 2.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.8435 -0.4540 -0.1402  0.5560  2.4389 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ batch    (Intercept) 0.00000  0.0000  
+ Residual             0.04054  0.2013  
+Number of obs: 48, groups:  batch, 3
+
+Fixed effects:
+                                  Estimate Std. Error t value
+timeS1500_0d:genotypewt            3.76378    0.08219  45.791
+timeS1500_5d:genotypewt            3.20745    0.11624  27.593
+timeS0_5d:genotypewt               0.15900    0.11624   1.368
+timeS1500_0d:genotypebglu28        3.88296    0.08219  47.241
+timeS1500_5d:genotypebglu28        3.24869    0.11624  27.948
+timeS0_5d:genotypebglu28           0.19530    0.11624   1.680
+timeS1500_0d:genotypebglu30        3.77876    0.08219  45.974
+timeS1500_5d:genotypebglu30        3.26921    0.11624  28.125
+timeS0_5d:genotypebglu30           0.16059    0.11624   1.382
+timeS1500_0d:genotypebglu28bglu30  4.19730    0.08219  51.066
+timeS1500_5d:genotypebglu28bglu30  3.42103    0.11624  29.431
+timeS0_5d:genotypebglu28bglu30     0.97249    0.11624   8.366
+
+Correlation of Fixed Effects:
+             tmS1500_0: tmS1500_5: tmS0_5: tmS1500_0:28 tmS1500_5:28 tmS0_5:28
+tmS1500_5d:  0.000                                                            
+tmS0_5d:gnt  0.000      0.000                                                 
+tmS1500_0:28 0.000      0.000      0.000                                      
+tmS1500_5:28 0.000      0.000      0.000   0.000                              
+tmS0_5d:g28  0.000      0.000      0.000   0.000        0.000                 
+tS1500_0:30  0.000      0.000      0.000   0.000        0.000        0.000    
+tS1500_5:30  0.000      0.000      0.000   0.000        0.000        0.000    
+tmS0_5d:g30  0.000      0.000      0.000   0.000        0.000        0.000    
+tS1500_0:283 0.000      0.000      0.000   0.000        0.000        0.000    
+tS1500_5:283 0.000      0.000      0.000   0.000        0.000        0.000    
+tmS0_5:2830  0.000      0.000      0.000   0.000        0.000        0.000    
+             tS1500_0:3 tS1500_5:3 tS0_5:3 tS1500_0:283 tS1500_5:283
+tmS1500_5d:                                                         
+tmS0_5d:gnt                                                         
+tmS1500_0:28                                                        
+tmS1500_5:28                                                        
+tmS0_5d:g28                                                         
+tS1500_0:30                                                         
+tS1500_5:30  0.000                                                  
+tmS0_5d:g30  0.000      0.000                                       
+tS1500_0:283 0.000      0.000      0.000                            
+tS1500_5:283 0.000      0.000      0.000   0.000                    
+tmS0_5:2830  0.000      0.000      0.000   0.000        0.000       
+convergence code: 0
+boundary (singular) fit: see ?isSingular
+

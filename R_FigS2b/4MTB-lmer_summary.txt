@@ -1,0 +1,31 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: log10(value) ~ sulfur - 1 + (1 | batch)
+   Data: temp
+
+REML criterion at convergence: 12.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.6566 -0.3534 -0.1821  0.2927  2.1250 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ batch    (Intercept) 0.0000   0.0000  
+ Residual             0.1015   0.3185  
+Number of obs: 16, groups:  batch, 4
+
+Fixed effects:
+               Estimate Std. Error t value
+sulfurS1500      0.7367     0.1593   4.626
+sulfurS150      -0.6937     0.1593  -4.356
+sulfur4MSB      -0.4938     0.1593  -3.101
+sulfur4MSB_34S  -0.6748     0.1593  -4.237
+
+Correlation of Fixed Effects:
+            sS1500 slS150 sl4MSB
+sulfurS150  0.000               
+sulfur4MSB  0.000  0.000        
+slf4MSB_34S 0.000  0.000  0.000 
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see ?isSingular
+

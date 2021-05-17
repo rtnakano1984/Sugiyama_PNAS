@@ -1,0 +1,157 @@
+time,genotype,cpd,batch,value
+0h,medium,5MSP-NH2,1,8.09E-05
+0h,medium,5MSP-NH2,1,0.00341028
+0h,medium,5MSP-NH2,2,0.003137389
+0h,medium,5MSP-NH2,2,8.46E-05
+0h,medium,5MSP-NH2,3,0.002217512
+0h,medium,5MSP-NH2,3,8.02E-05
+6min,medium,5MSP-NH2,1,8.96E-05
+6min,medium,5MSP-NH2,1,8.64E-05
+6min,medium,5MSP-NH2,2,8.64E-05
+6min,medium,5MSP-NH2,2,8.66E-05
+6min,medium,5MSP-NH2,3,0.001896654
+6min,medium,5MSP-NH2,3,8.44E-05
+3h,medium,5MSP-NH2,1,0.005037416
+3h,medium,5MSP-NH2,1,0.002079783
+3h,medium,5MSP-NH2,2,0.002892811
+3h,medium,5MSP-NH2,2,0.0036712
+3h,medium,5MSP-NH2,3,7.68E-05
+3h,medium,5MSP-NH2,3,8.70E-05
+9h,medium,5MSP-NH2,1,8.54E-05
+9h,medium,5MSP-NH2,1,0.001870061
+9h,medium,5MSP-NH2,2,8.98E-05
+9h,medium,5MSP-NH2,2,8.53E-05
+9h,medium,5MSP-NH2,3,0.001954681
+9h,medium,5MSP-NH2,3,9.31E-05
+24h,medium,5MSP-NH2,1,0.00244355
+24h,medium,5MSP-NH2,1,8.57E-05
+24h,medium,5MSP-NH2,2,8.69E-05
+24h,medium,5MSP-NH2,2,9.10E-05
+24h,medium,5MSP-NH2,3,8.53E-05
+24h,medium,5MSP-NH2,3,9.04E-05
+48h,medium,5MSP-NH2,1,0.002405282
+48h,medium,5MSP-NH2,1,8.28E-05
+48h,medium,5MSP-NH2,2,8.38E-05
+48h,medium,5MSP-NH2,2,8.30E-05
+48h,medium,5MSP-NH2,3,8.51E-05
+48h,medium,5MSP-NH2,3,8.81E-05
+0h,wt intact,5MSP-NH2,1,8.09E-05
+0h,wt intact,5MSP-NH2,1,0.00341028
+0h,wt intact,5MSP-NH2,2,0.003137389
+0h,wt intact,5MSP-NH2,2,8.46E-05
+0h,wt intact,5MSP-NH2,3,0.002217512
+0h,wt intact,5MSP-NH2,3,8.02E-05
+6min,wt intact,5MSP-NH2,1,0.0037734
+6min,wt intact,5MSP-NH2,2,9.34E-05
+6min,wt intact,5MSP-NH2,3,0.00480477
+3h,wt intact,5MSP-NH2,1,0.004109693
+3h,wt intact,5MSP-NH2,2,9.97E-05
+3h,wt intact,5MSP-NH2,3,0.003456549
+9h,wt intact,5MSP-NH2,1,0.00278813
+9h,wt intact,5MSP-NH2,2,0.002375467
+9h,wt intact,5MSP-NH2,3,0.002144535
+24h,wt intact,5MSP-NH2,1,0.005358719
+24h,wt intact,5MSP-NH2,2,0.007347037
+24h,wt intact,5MSP-NH2,3,0.008151685
+48h,wt intact,5MSP-NH2,1,0.007797599
+48h,wt intact,5MSP-NH2,2,0.005852439
+48h,wt intact,5MSP-NH2,3,0.007692832
+0h,wt homogenate,5MSP-NH2,1,8.09E-05
+0h,wt homogenate,5MSP-NH2,1,0.00341028
+0h,wt homogenate,5MSP-NH2,2,0.003137389
+0h,wt homogenate,5MSP-NH2,2,8.46E-05
+0h,wt homogenate,5MSP-NH2,3,0.002217512
+0h,wt homogenate,5MSP-NH2,3,8.02E-05
+6min,wt homogenate,5MSP-NH2,1,0.047177415
+6min,wt homogenate,5MSP-NH2,2,0.046893815
+6min,wt homogenate,5MSP-NH2,3,0.045120954
+3h,wt homogenate,5MSP-NH2,1,0.057296717
+3h,wt homogenate,5MSP-NH2,2,0.059453338
+3h,wt homogenate,5MSP-NH2,3,0.054942236
+9h,wt homogenate,5MSP-NH2,1,0.064159621
+9h,wt homogenate,5MSP-NH2,2,0.075057584
+9h,wt homogenate,5MSP-NH2,3,0.07436236
+24h,wt homogenate,5MSP-NH2,1,0.083539805
+24h,wt homogenate,5MSP-NH2,2,0.09101655
+24h,wt homogenate,5MSP-NH2,3,0.078651302
+48h,wt homogenate,5MSP-NH2,1,0.08781063
+48h,wt homogenate,5MSP-NH2,2,0.076399724
+48h,wt homogenate,5MSP-NH2,3,0.088262982
+0h,medium,4MSB-NH2,1,8.09E-05
+0h,medium,4MSB-NH2,1,8.63E-05
+0h,medium,4MSB-NH2,2,8.91E-05
+0h,medium,4MSB-NH2,2,8.46E-05
+0h,medium,4MSB-NH2,3,7.45E-05
+0h,medium,4MSB-NH2,3,8.02E-05
+6min,medium,4MSB-NH2,1,8.96E-05
+6min,medium,4MSB-NH2,1,8.64E-05
+6min,medium,4MSB-NH2,2,8.64E-05
+6min,medium,4MSB-NH2,2,8.66E-05
+6min,medium,4MSB-NH2,3,9.03E-05
+6min,medium,4MSB-NH2,3,8.44E-05
+3h,medium,4MSB-NH2,1,8.70E-05
+3h,medium,4MSB-NH2,1,8.04E-05
+3h,medium,4MSB-NH2,2,8.60E-05
+3h,medium,4MSB-NH2,2,8.61E-05
+3h,medium,4MSB-NH2,3,7.68E-05
+3h,medium,4MSB-NH2,3,8.70E-05
+9h,medium,4MSB-NH2,1,8.54E-05
+9h,medium,4MSB-NH2,1,8.88E-05
+9h,medium,4MSB-NH2,2,8.98E-05
+9h,medium,4MSB-NH2,2,8.53E-05
+9h,medium,4MSB-NH2,3,8.40E-05
+9h,medium,4MSB-NH2,3,9.31E-05
+24h,medium,4MSB-NH2,1,7.75E-05
+24h,medium,4MSB-NH2,1,8.57E-05
+24h,medium,4MSB-NH2,2,8.69E-05
+24h,medium,4MSB-NH2,2,9.10E-05
+24h,medium,4MSB-NH2,3,8.53E-05
+24h,medium,4MSB-NH2,3,9.04E-05
+48h,medium,4MSB-NH2,1,8.23E-05
+48h,medium,4MSB-NH2,1,8.28E-05
+48h,medium,4MSB-NH2,2,8.38E-05
+48h,medium,4MSB-NH2,2,8.30E-05
+48h,medium,4MSB-NH2,3,8.51E-05
+48h,medium,4MSB-NH2,3,8.81E-05
+0h,wt intact,4MSB-NH2,1,8.09E-05
+0h,wt intact,4MSB-NH2,1,8.63E-05
+0h,wt intact,4MSB-NH2,2,8.91E-05
+0h,wt intact,4MSB-NH2,2,8.46E-05
+0h,wt intact,4MSB-NH2,3,7.45E-05
+0h,wt intact,4MSB-NH2,3,8.02E-05
+6min,wt intact,4MSB-NH2,1,0.007735471
+6min,wt intact,4MSB-NH2,2,0.009403073
+6min,wt intact,4MSB-NH2,3,0.01110777
+3h,wt intact,4MSB-NH2,1,0.076036239
+3h,wt intact,4MSB-NH2,2,0.068888381
+3h,wt intact,4MSB-NH2,3,0.068927952
+9h,wt intact,4MSB-NH2,1,0.35182452
+9h,wt intact,4MSB-NH2,2,0.228361086
+9h,wt intact,4MSB-NH2,3,0.284409178
+24h,wt intact,4MSB-NH2,1,0.719608848
+24h,wt intact,4MSB-NH2,2,0.751378118
+24h,wt intact,4MSB-NH2,3,0.666461657
+48h,wt intact,4MSB-NH2,1,0.892150738
+48h,wt intact,4MSB-NH2,2,0.810657969
+48h,wt intact,4MSB-NH2,3,0.890310212
+0h,wt homogenate,4MSB-NH2,1,8.09E-05
+0h,wt homogenate,4MSB-NH2,1,8.63E-05
+0h,wt homogenate,4MSB-NH2,2,8.91E-05
+0h,wt homogenate,4MSB-NH2,2,8.46E-05
+0h,wt homogenate,4MSB-NH2,3,7.45E-05
+0h,wt homogenate,4MSB-NH2,3,8.02E-05
+6min,wt homogenate,4MSB-NH2,1,0.102842708
+6min,wt homogenate,4MSB-NH2,2,0.086215577
+6min,wt homogenate,4MSB-NH2,3,0.059146294
+3h,wt homogenate,4MSB-NH2,1,0.088209063
+3h,wt homogenate,4MSB-NH2,2,0.101867814
+3h,wt homogenate,4MSB-NH2,3,0.073783019
+9h,wt homogenate,4MSB-NH2,1,0.083336787
+9h,wt homogenate,4MSB-NH2,2,0.098454731
+9h,wt homogenate,4MSB-NH2,3,0.079093124
+24h,wt homogenate,4MSB-NH2,1,0.103927775
+24h,wt homogenate,4MSB-NH2,2,0.123268116
+24h,wt homogenate,4MSB-NH2,3,0.072900836
+48h,wt homogenate,4MSB-NH2,1,0.129724722
+48h,wt homogenate,4MSB-NH2,2,0.103481316
+48h,wt homogenate,4MSB-NH2,3,0.133976285

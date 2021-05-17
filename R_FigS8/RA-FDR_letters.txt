@@ -1,7 +1,7 @@
 	p.letters$Letters[sort]
-S150	c
-S0	c
-4MTB	a
+S150	a
+S0	a
+4MTB	c
 allyl	b
 PhE	b
-I3G	c
+I3G	a

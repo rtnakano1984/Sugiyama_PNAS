@@ -1,0 +1,7 @@
+	p.letters$Letters[sort]
+S150	b
+S0	a
+4MTB	c
+allyl	c
+PhE	c
+I3G	c

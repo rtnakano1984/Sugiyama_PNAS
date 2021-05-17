@@ -1,0 +1,156 @@
+# Sugiyama et al., PNAS, 2021
+# Fig 2B
+# By Ryohei Thomas Nakano, PhD; nakano@mpipz.mpg.de
+
+# cleanup
+rm(list=ls())
+
+# initialization
+library(lme4)
+library(dplyr)
+library(stringr)
+library(multcompView)
+
+data_dir <- "/path_to_data_dir/R_Fig2b/"
+source("/path_to_data_dir/function.R")
+
+# import
+dat <- read.table(paste(data_dir, "R_Fig 2b.csv", sep=""), sep=",", header=T, stringsAsFactors=F)
+dat$sulfur <- str_replace(dat$sulfur, "-", "_")
+dat$batch <- as.factor(dat$batch)
+
+# for each compound
+for(cpd in unique(dat$cpd)){
+
+	# total
+	idx <- dat$cpd == cpd
+	temp <- dat[idx,] %>% group_by(sulfur, batch) %>% summarize(value=sum(value))
+
+	# distribution
+	pdf(paste(data_dir, cpd, "-data_nomral.pdf", sep=""))
+		hist(temp$value, breaks=20)
+		qqnorm(temp$value)
+		qqline(temp$value, col='red')
+
+		hist(log10(temp$value), breaks=20)
+		qqnorm(log10(temp$value))
+		qqline(log10(temp$value), col='red')
+	dev.off()
+
+	# fit
+	lmer_fit <- lmer(log10(value) ~ sulfur - 1 + (1|batch), temp)
+	dat_lmer <- summary(lmer_fit)
+
+	sink(paste(data_dir, cpd, "-lmer_summary.txt", sep=""))
+		print(dat_lmer)
+	sink()
+
+	# diagnosis
+	pdf(paste(data_dir, cpd, "-diagnosis.pdf", sep=""))
+		plot(fitted(lmer_fit), resid(lmer_fit))
+		abline(0, 0, col="red")
+
+		qqnorm(dat_lmer$resid)
+		qqline(dat_lmer$resid, col="red")
+	dev.off()
+
+	# pairwise test
+	adj_p.val <- pairwise_ttest(dat_lmer)
+	p.letters <- multcompLetters(adj_p.val)
+
+	names(p.letters$Letters) <- str_replace(names(p.letters$Letters), "sulfur", "")
+	p.letters <- p.letters$Letters[c("S1500", "S150", "4MSB", "4MSB_34S")]
+
+	write.table(as.data.frame(p.letters), file=paste(data_dir, cpd, "-FDR_letters.txt", sep=""), sep="\t", row.names=T,col.names=NA, quote=F)
+
+
+	# isotope 0
+	idx <- dat$cpd == cpd & dat$isotope == 0
+	temp <- dat[idx,] %>% group_by(sulfur, batch) %>% summarize(value=sum(value))
+
+	# distribution
+	pdf(paste(data_dir, cpd, "-isotope_0-data_nomral.pdf", sep=""))
+		hist(temp$value, breaks=20)
+		qqnorm(temp$value)
+		qqline(temp$value, col='red')
+
+		hist(log10(temp$value), breaks=20)
+		qqnorm(log10(temp$value))
+		qqline(log10(temp$value), col='red')
+	dev.off()
+
+	# fit
+	lmer_fit <- lmer(log10(value) ~ sulfur - 1 + (1|batch), temp)
+	dat_lmer <- summary(lmer_fit)
+
+	sink(paste(data_dir, cpd, "-isotope_0-lmer_summary.txt", sep=""))
+	print(dat_lmer)
+	sink()
+	
+	# diagnosis
+	pdf(paste(data_dir, cpd, "-isotope_0-diagnosis.pdf", sep=""))
+		plot(fitted(lmer_fit), resid(lmer_fit))
+		abline(0, 0, col="red")
+
+		qqnorm(dat_lmer$resid)
+		qqline(dat_lmer$resid, col="red")
+	dev.off()
+
+	# pairwise test
+	adj_p.val <- pairwise_ttest(dat_lmer)
+	p.letters <- multcompLetters(adj_p.val)
+
+	names(p.letters$Letters) <- str_replace(names(p.letters$Letters), "sulfur", "")
+	p.letters <- p.letters$Letters[c("S1500", "S150", "4MSB", "4MSB_34S")]
+
+	write.table(as.data.frame(p.letters), file=paste(data_dir, cpd, "-isotope_0-FDR_letters.txt", sep=""), sep="\t", row.names=T,col.names=NA, quote=F)
+
+	# isotope 2
+	idx <- dat$cpd == cpd & dat$isotope == 2
+	temp <- dat[idx,] %>% group_by(sulfur, batch) %>% summarize(value=sum(value))
+
+	# distribution
+	pdf(paste(data_dir, cpd, "-isotope_2-data_nomral.pdf", sep=""))
+		hist(temp$value, breaks=20)
+		qqnorm(temp$value)
+		qqline(temp$value, col='red')
+
+		hist(log10(temp$value), breaks=20)
+		qqnorm(log10(temp$value))
+		qqline(log10(temp$value), col='red')
+	dev.off()
+
+	# fit
+	if(cpd == "GSH"){
+		lmer_fit <- lmer(value ~ sulfur - 1 + (1|batch), temp)
+	} else {
+		lmer_fit <- lmer(log10(value) ~ sulfur - 1 + (1|batch), temp)
+	}
+	
+	dat_lmer <- summary(lmer_fit)
+	
+	# diagnosis
+	sink(paste(data_dir, cpd, "-isotope_2-lmer_summary.txt", sep=""))
+	print(dat_lmer)
+	sink()
+	
+	pdf(paste(data_dir, cpd, "-isotope_2-diagnosis.pdf", sep=""))
+		plot(fitted(lmer_fit), resid(lmer_fit))
+		abline(0, 0, col="red")
+
+		qqnorm(dat_lmer$resid)
+		qqline(dat_lmer$resid, col="red")
+	dev.off()
+
+	# pairwise test
+	adj_p.val <- pairwise_ttest(dat_lmer)
+	p.letters <- multcompLetters(adj_p.val)
+
+	names(p.letters$Letters) <- str_replace(names(p.letters$Letters), "sulfur", "")
+	p.letters <- p.letters$Letters[c("S1500", "S150", "4MSB", "4MSB_34S")]
+
+	write.table(as.data.frame(p.letters), file=paste(data_dir, cpd, "-isotope_2-FDR_letters.txt", sep=""), sep="\t", row.names=T,col.names=NA, quote=F)
+
+}
+
+

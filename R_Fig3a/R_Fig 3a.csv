@@ -1,0 +1,157 @@
+time,genotype,cpd,batch,value
+0h,wt intact,SFN,1,0.011851505
+0h,wt intact,SFN,1,0.006788375
+0h,wt intact,SFN,2,0.019706317
+0h,wt intact,SFN,2,0.000127369
+0h,wt intact,SFN,3,0.000137171
+0h,wt intact,SFN,3,0.000125775
+6min,wt intact,SFN,1,1.768791753
+6min,wt intact,SFN,2,1.353879305
+6min,wt intact,SFN,3,1.453949278
+3h,wt intact,SFN,1,23.91898085
+3h,wt intact,SFN,2,17.73063618
+3h,wt intact,SFN,3,18.26257549
+9h,wt intact,SFN,1,30.14655751
+9h,wt intact,SFN,2,25.45827696
+9h,wt intact,SFN,3,23.26112709
+24h,wt intact,SFN,1,5.614434118
+24h,wt intact,SFN,2,4.344888031
+24h,wt intact,SFN,3,2.175022504
+48h,wt intact,SFN,1,0.211198327
+48h,wt intact,SFN,2,0.106083601
+48h,wt intact,SFN,3,0.107707191
+0h,wt homogenate,SFN,1,0.011851505
+0h,wt homogenate,SFN,1,0.006788375
+0h,wt homogenate,SFN,2,0.019706317
+0h,wt homogenate,SFN,2,0.000127369
+0h,wt homogenate,SFN,3,0.000137171
+0h,wt homogenate,SFN,3,0.000125775
+6min,wt homogenate,SFN,1,65.3968032
+6min,wt homogenate,SFN,2,58.15566606
+6min,wt homogenate,SFN,3,58.13243819
+3h,wt homogenate,SFN,1,69.10410641
+3h,wt homogenate,SFN,2,62.45126535
+3h,wt homogenate,SFN,3,63.74903233
+9h,wt homogenate,SFN,1,70.45984953
+9h,wt homogenate,SFN,2,61.54222645
+9h,wt homogenate,SFN,3,66.28087048
+24h,wt homogenate,SFN,1,75.98677873
+24h,wt homogenate,SFN,2,62.64547458
+24h,wt homogenate,SFN,3,75.87226605
+48h,wt homogenate,SFN,1,75.43479803
+48h,wt homogenate,SFN,2,63.05463306
+48h,wt homogenate,SFN,3,64.00983004
+0h,medium,SFN,1,0.011851505
+0h,medium,SFN,1,0.006788375
+0h,medium,SFN,2,0.019706317
+0h,medium,SFN,2,0.000127369
+0h,medium,SFN,3,0.000137171
+0h,medium,SFN,3,0.000125775
+6min,medium,SFN,1,0.02353257
+6min,medium,SFN,1,0.007449161
+6min,medium,SFN,2,0.025893509
+6min,medium,SFN,2,0.000135572
+6min,medium,SFN,3,0.01364567
+6min,medium,SFN,3,0.000134115
+3h,medium,SFN,1,0.017590155
+3h,medium,SFN,1,0.000142568
+3h,medium,SFN,2,0.042124599
+3h,medium,SFN,2,0.000133246
+3h,medium,SFN,3,0.011945572
+3h,medium,SFN,3,0.000141431
+9h,medium,SFN,1,0.022633571
+9h,medium,SFN,1,0.018358374
+9h,medium,SFN,2,0.063023047
+9h,medium,SFN,2,0.000138266
+9h,medium,SFN,3,0.000142829
+9h,medium,SFN,3,0.000174258
+24h,medium,SFN,1,0.035464785
+24h,medium,SFN,1,0.026430389
+24h,medium,SFN,2,0.099418263
+24h,medium,SFN,2,0.000144467
+24h,medium,SFN,3,0.032213003
+24h,medium,SFN,3,0.010149606
+48h,medium,SFN,1,0.043209376
+48h,medium,SFN,1,0.039912022
+48h,medium,SFN,2,0.114094459
+48h,medium,SFN,2,0.016668866
+48h,medium,SFN,3,0.049903051
+48h,medium,SFN,3,0.014867934
+0h,wt intact,4MSB,1,20.75183255
+0h,wt intact,4MSB,1,20.95029116
+0h,wt intact,4MSB,2,25.12071042
+0h,wt intact,4MSB,2,22.01524075
+0h,wt intact,4MSB,3,23.64641327
+0h,wt intact,4MSB,3,22.73050298
+6min,wt intact,4MSB,1,24.45062045
+6min,wt intact,4MSB,2,25.90041252
+6min,wt intact,4MSB,3,27.33020842
+3h,wt intact,4MSB,1,16.27749867
+3h,wt intact,4MSB,2,17.58843425
+3h,wt intact,4MSB,3,17.93256683
+9h,wt intact,4MSB,1,6.833949497
+9h,wt intact,4MSB,2,5.764412676
+9h,wt intact,4MSB,3,6.248389075
+24h,wt intact,4MSB,1,0.346387988
+24h,wt intact,4MSB,2,0.284467521
+24h,wt intact,4MSB,3,0.205416854
+48h,wt intact,4MSB,1,0.008421122
+48h,wt intact,4MSB,2,0.004575761
+48h,wt intact,4MSB,3,0.013506466
+0h,wt homogenate,4MSB,1,20.75183255
+0h,wt homogenate,4MSB,1,20.95029116
+0h,wt homogenate,4MSB,2,25.12071042
+0h,wt homogenate,4MSB,2,22.01524075
+0h,wt homogenate,4MSB,3,23.64641327
+0h,wt homogenate,4MSB,3,22.73050298
+6min,wt homogenate,4MSB,1,0.031158189
+6min,wt homogenate,4MSB,2,0.011312333
+6min,wt homogenate,4MSB,3,0.007640449
+3h,wt homogenate,4MSB,1,0.000409112
+3h,wt homogenate,4MSB,2,0.000390555
+3h,wt homogenate,4MSB,3,0.000315808
+9h,wt homogenate,4MSB,1,0.000395315
+9h,wt homogenate,4MSB,2,0.007073612
+9h,wt homogenate,4MSB,3,0.00240897
+24h,wt homogenate,4MSB,1,0.003308338
+24h,wt homogenate,4MSB,2,0.000400505
+24h,wt homogenate,4MSB,3,0.000355018
+48h,wt homogenate,4MSB,1,0.000411554
+48h,wt homogenate,4MSB,2,0.000429485
+48h,wt homogenate,4MSB,3,0.000305209
+0h,medium,4MSB,1,20.75183255
+0h,medium,4MSB,1,20.95029116
+0h,medium,4MSB,2,25.12071042
+0h,medium,4MSB,2,22.01524075
+0h,medium,4MSB,3,23.64641327
+0h,medium,4MSB,3,22.73050298
+6min,medium,4MSB,1,23.50635888
+6min,medium,4MSB,1,21.70821823
+6min,medium,4MSB,2,24.75485488
+6min,medium,4MSB,2,22.24438847
+6min,medium,4MSB,3,25.92179789
+6min,medium,4MSB,3,24.28697957
+3h,medium,4MSB,1,24.44299752
+3h,medium,4MSB,1,22.36728061
+3h,medium,4MSB,2,24.00837855
+3h,medium,4MSB,2,21.53975706
+3h,medium,4MSB,3,24.89958892
+3h,medium,4MSB,3,24.93674368
+9h,medium,4MSB,1,22.82671915
+9h,medium,4MSB,1,22.92005923
+9h,medium,4MSB,2,25.3814615
+9h,medium,4MSB,2,23.66245786
+9h,medium,4MSB,3,27.1511996
+9h,medium,4MSB,3,30.94509909
+24h,medium,4MSB,1,25.6594455
+24h,medium,4MSB,1,22.37580965
+24h,medium,4MSB,2,25.23239265
+24h,medium,4MSB,2,23.94540643
+24h,medium,4MSB,3,29.15874563
+24h,medium,4MSB,3,25.882974
+48h,medium,4MSB,1,25.66188493
+48h,medium,4MSB,1,24.93850252
+48h,medium,4MSB,2,26.27697328
+48h,medium,4MSB,2,23.27555565
+48h,medium,4MSB,3,28.90715631
+48h,medium,4MSB,3,24.14230808

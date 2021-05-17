@@ -1,0 +1,56 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: sqrt(value) ~ time:genotype - 1 + (1 | batch)
+   Data: temp
+
+REML criterion at convergence: -160.2
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.04752 -0.49177  0.06443  0.53952  2.04156 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ batch    (Intercept) 2.791e-05 0.005283
+ Residual             4.094e-04 0.020233
+Number of obs: 48, groups:  batch, 4
+
+Fixed effects:
+                       Estimate Std. Error t value
+time00h:genotypewt      0.01124    0.01046   1.075
+time09h:genotypewt      0.03760    0.01046   3.596
+time24h:genotypewt      0.11415    0.01046  10.918
+time48h:genotypewt      0.14679    0.01046  14.040
+time00h:genotypewt_BSO  0.02014    0.01046   1.926
+time09h:genotypewt_BSO  0.03096    0.01046   2.961
+time24h:genotypewt_BSO  0.05516    0.01046   5.276
+time48h:genotypewt_BSO  0.11797    0.01046  11.283
+time00h:genotypepad2    0.01202    0.01046   1.150
+time09h:genotypepad2    0.02702    0.01046   2.585
+time24h:genotypepad2    0.07086    0.01046   6.777
+time48h:genotypepad2    0.08719    0.01046   8.339
+
+Correlation of Fixed Effects:
+            tm00h: tm09h: tm24h: tm48h: t00:_B t09:_B t24:_B t48:_B tm00:2
+tm09h:gntyp 0.064                                                         
+tm24h:gntyp 0.064  0.064                                                  
+tm48h:gntyp 0.064  0.064  0.064                                           
+tm00h:g_BSO 0.064  0.064  0.064  0.064                                    
+tm09h:g_BSO 0.064  0.064  0.064  0.064  0.064                             
+tm24h:g_BSO 0.064  0.064  0.064  0.064  0.064  0.064                      
+tm48h:g_BSO 0.064  0.064  0.064  0.064  0.064  0.064  0.064               
+tm00h:gnty2 0.064  0.064  0.064  0.064  0.064  0.064  0.064  0.064        
+tm09h:gnty2 0.064  0.064  0.064  0.064  0.064  0.064  0.064  0.064  0.064 
+tm24h:gnty2 0.064  0.064  0.064  0.064  0.064  0.064  0.064  0.064  0.064 
+tm48h:gnty2 0.064  0.064  0.064  0.064  0.064  0.064  0.064  0.064  0.064 
+            tm09:2 tm24:2
+tm09h:gntyp              
+tm24h:gntyp              
+tm48h:gntyp              
+tm00h:g_BSO              
+tm09h:g_BSO              
+tm24h:g_BSO              
+tm48h:g_BSO              
+tm00h:gnty2              
+tm09h:gnty2              
+tm24h:gnty2 0.064        
+tm48h:gnty2 0.064  0.064 

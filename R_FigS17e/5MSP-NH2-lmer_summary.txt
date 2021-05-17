@@ -1,0 +1,31 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: log10(value) ~ time - 1 + (1 | batch)
+   Data: dat
+
+REML criterion at convergence: -24.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.6354 -0.6643  0.1623  0.5529  1.1675 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ batch    (Intercept) 0.000000 0.00000 
+ Residual             0.004037 0.06354 
+Number of obs: 15, groups:  batch, 3
+
+Fixed effects:
+        Estimate Std. Error t value
+time00h -0.50473    0.02594  -19.46
+time09h -0.55518    0.03668  -15.13
+time24h -0.60248    0.03668  -16.42
+time48h -0.49212    0.03668  -13.41
+
+Correlation of Fixed Effects:
+        tim00h tim09h tim24h
+time09h 0.000               
+time24h 0.000  0.000        
+time48h 0.000  0.000  0.000 
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see ?isSingular
+

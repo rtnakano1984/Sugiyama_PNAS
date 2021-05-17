@@ -1,0 +1,8 @@
+Analysis of Variance Table
+
+Response: sqrt(value)
+                Df Sum Sq Mean Sq F value    Pr(>F)    
+genotype:sulfur  4 214.75  53.688  32.538 5.361e-05 ***
+Residuals        8  13.20   1.650                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
