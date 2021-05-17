@@ -1,9 +1,0 @@
-	p.letters$Letters[sort]
-00h:wt	b
-00h:oxp1	c
-09h:wt	a
-09h:oxp1	c
-24h:wt	b
-24h:oxp1	c
-48h:wt	b
-48h:oxp1	c

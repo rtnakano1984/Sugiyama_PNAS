@@ -1,5 +1,0 @@
-	p.letters$Letters[sulfur]
-S1500	c
-S150	b
-4MSB	ab
-4MSB_34S	a

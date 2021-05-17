@@ -1,5 +1,0 @@
-	p.letters$Letters[paste("sulfur", sulfur, sep = "")]
-sulfurS1500	b
-sulfurS150	a
-sulfur4MSB	c
-sulfur4MSB_34S	d

@@ -1,9 +1,0 @@
-	p.letters$Letters[sort]
-S1500:wt	e
-S1500:bglu28bglu30	d
-S150:wt	cd
-S150:bglu28bglu30	c
-S15:wt	a
-S15:bglu28bglu30	b
-S0:wt	a
-S0:bglu28bglu30	b

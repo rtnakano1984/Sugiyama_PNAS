@@ -1,6 +1,0 @@
-	p.letters$Letters[sort]
-S1500	c
-S150	c
-S15	b
-S0	a
-4MSB	c

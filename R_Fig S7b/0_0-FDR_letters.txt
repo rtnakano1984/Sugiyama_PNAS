@@ -1,5 +1,0 @@
-	p.letters$Letters[sort]
-S1500:wt	b
-S1500:qko	a
-S150:wt	b
-S150:qko	a
