@@ -18,13 +18,13 @@ source("/path_to_data_dir/function.R")
 dat_all <- read.table(paste(data_dir, "R_Fig S17e.csv", sep=""), sep=",", header=T, stringsAsFactors=F)
 dat_all$batch <- factor(dat_all$batch)
 
-# for each treatment
-for(treatment in unique(dat_all$treatment)){
-  idx <- dat_all$treatment == treatment
+# for each commpound
+for(cpd in unique(dat_all$cpd)){
+  idx <- dat_all$cpd == cpd
   dat <- dat_all[idx,]
 
   # distribution
-  pdf(paste(data_dir, treatment, "-data_nomral.pdf", sep=""))
+  pdf(paste(data_dir, cpd, "-data_nomral.pdf", sep=""))
     hist(dat$value, breaks=20)
     qqnorm(dat$value)
     qqline(dat$value, col='red')
@@ -38,12 +38,12 @@ for(treatment in unique(dat_all$treatment)){
   lmer_fit <- lmer(log10(value) ~ time - 1 + (1|batch), dat)
   dat_lmer <- summary(lmer_fit)
 
-  sink(paste(data_dir, treatment, "-lmer_summary.txt", sep=""))
+  sink(paste(data_dir, cpd, "-lmer_summary.txt", sep=""))
   print(dat_lmer)
   sink()
 
   # diagnosis
-  pdf(paste(data_dir, treatment, "-diagnosis.pdf", sep=""))
+  pdf(paste(data_dir, cpd, "-diagnosis.pdf", sep=""))
     plot(fitted(lmer_fit), resid(lmer_fit))
     abline(0, 0, col="red")
 
@@ -58,7 +58,7 @@ for(treatment in unique(dat_all$treatment)){
   names(p.letters$Letters) <- str_replace(names(p.letters$Letters), "time", "")
 
   sort <- c("00h", "09h", "24h", "48h")
-  write.table(as.data.frame(p.letters$Letters[sort]), file=paste(data_dir, treatment, "-FDR_letters.txt", sep=""), sep="\t", row.names=T,col.names=NA, quote=F)
+  write.table(as.data.frame(p.letters$Letters[sort]), file=paste(data_dir, cpd, "-FDR_letters.txt", sep=""), sep="\t", row.names=T,col.names=NA, quote=F)
 
 }
 

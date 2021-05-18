@@ -1,9 +1,0 @@
-Analysis of Variance Table
-
-Response: sqrt(value)
-              Df Sum Sq Mean Sq F value    Pr(>F)    
-batch          3 434.87 144.958 805.202 < 2.2e-16 ***
-genotype:time  7 108.52  15.503  86.116 1.536e-13 ***
-Residuals     20   3.60   0.180                      
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,9 +1,0 @@
-	p.letters$Letters[sort]
-wt:00h	c
-oxp1:00h	c
-wt:09h	ab
-oxp1:09h	b
-wt:24h	a
-oxp1:24h	a
-wt:48h	ab
-oxp1:48h	ab

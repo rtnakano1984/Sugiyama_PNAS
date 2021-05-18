@@ -1,9 +1,0 @@
-	p.letters$Letters[sort]
-genotypewt:time00h	a
-genotypeoxp1:time00h	a
-genotypewt:time09h	bc
-genotypeoxp1:time09h	b
-genotypewt:time24h	d
-genotypeoxp1:time24h	cd
-genotypewt:time48h	bcd
-genotypeoxp1:time48h	b
